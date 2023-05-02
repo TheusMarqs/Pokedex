@@ -10,14 +10,14 @@
     <div class="input-group mb-4 mt-2">
       <input type="number" class="form-control" aria-label="Sizing example input"
         aria-describedby="inputGroup-sizing-default" [(ngModel)] = "idSelecionado">
-        
+
         <div class="input-group-append" style="border-left: none;">
           <span class="input-group-text" id="inputGroup-sizing-default">
             <fa-icon [icon]="faMagnifyingGlass" (click)="buscarId()" class="icone ml-2"></fa-icon>
           </span>
         </div>
-        
-        
+
+
     </div>
   </div>
 
@@ -54,10 +54,10 @@
 
     <div class="row text-white justify-content-between">
       <div class="col-md-5">
-        Habilidade 1:
+        Habilidade 1: {{getHabilidade()}}
       </div>
       <div class="col-md-5">
-        Habilidade 2:
+        Habilidade 2: {{getHabilidade2()}}
       </div>
     </div>
 

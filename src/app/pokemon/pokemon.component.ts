@@ -29,6 +29,7 @@ export class PokemonComponent implements OnInit {
     );
   }
 
+
   getId(): number {
     return this.service.pokeId;
   }
@@ -52,9 +53,21 @@ export class PokemonComponent implements OnInit {
   getAltura() : number {
     return this.poke.height;
   }
-  
+
   getPeso() : number {
     return this.poke.weight;
+  }
+
+
+  getHabilidade() : string {
+    return this.poke.abilities[0].ability.name;
+  }
+
+  getHabilidade2(): string {
+    if (this.poke?.abilities.length > 0 && this.poke.abilities[0]?.ability) {
+      return this.poke.abilities[0].ability.name;
+    }
+    return "No ability found";
   }
 
   idSelecionado : number = 0;
