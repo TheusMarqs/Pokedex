@@ -1,4 +1,4 @@
-<div class="container border rounded p-4 mt-5" style="width: 500px;">
+<div class="container border rounded bg-white p-4" style="width: 600px;">
   <div class="row display-4 mb-3">
     <div class="col text-center">
       Pokédex
@@ -32,19 +32,14 @@
 
   <div class="p-4 bg-secondary rounded mt-3">
     <div class="row">
+      <div class="col-md-1"></div>
       <div class="col-md-2">
-        <img [src]="poke.sprites.front_default" width="400px">
+        <img [src]="poke.sprites.other.home.front_default" width="400px">
       </div>
     </div>
 
-    <div class="row text-white mt-3 mb-4">
-      <div class="col">
-        There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.
-      </div>
-    </div>
-
-    <div class="row text-white justify-content-between">
-      <div class="col-md-5 mb-3">
+    <div class="row text-white mt-5">
+      <div class="col-md-6 mb-3">
         Altura: {{getAltura()}}
       </div>
       <div class="col-md-5 mb-3">
@@ -52,12 +47,12 @@
       </div>
     </div>
 
-    <div class="row text-white justify-content-between">
-      <div class="col-md-5">
-        Habilidade 1: {{getHabilidade()}}
+    <div class="row text-white">
+      <div class="col-md-6">
+        Habilidade 1: {{getHabilidade() | titlecase}}
       </div>
       <div class="col-md-5">
-        Habilidade 2: {{getHabilidade2()}}
+        Habilidade 2: {{getHabilidade2() | titlecase}}
       </div>
     </div>
 

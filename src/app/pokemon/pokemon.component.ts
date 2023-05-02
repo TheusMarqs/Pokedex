@@ -64,10 +64,14 @@ export class PokemonComponent implements OnInit {
   }
 
   getHabilidade2(): string {
-    if (this.poke?.abilities.length > 0 && this.poke.abilities[0]?.ability) {
-      return this.poke.abilities[0].ability.name;
+    if (this.poke.abilities[1].ability.name === '') {
+      return "Sem habilidade secundária";
     }
-    return "No ability found";
+
+    else {
+      return this.poke.abilities[1].ability.name;
+    }
+
   }
 
   idSelecionado : number = 0;

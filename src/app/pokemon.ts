@@ -4,14 +4,27 @@ export interface Pokemon {
     height: number;
     weight: number;
     sprites: {
-        front_default: string;
+      other: {
+        home: {
+          front_default : string;
+        }
+      }
+
     }
 
     abilities: [{
       ability: {
         name : string;
       }
-    }];
+      slot: 1;
+    },
+    {
+      ability: {
+        name : string
+      }
+      slot: 2;
+    }
+  ];
 
 
 }
