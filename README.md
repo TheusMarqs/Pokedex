@@ -1,27 +1,24 @@
-# Pokedex
+# 🎮 Pokédex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+## 📝 Description
+Pokédex is a web application built with Angular that allows users to explore Pokémon details, including stats, types, abilities, and more. It consumes data from an external API (e.g., PokéAPI) to deliver an interactive and dynamic user experience for Pokémon enthusiasts.
 
-## Development server
+## 🛠️ Features
+### 🔍 Search Functionality
+Search for Pokémon by name or ID.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 📋 Detailed Information
+View Pokémon stats, abilities, and type advantages.
 
-## Code scaffolding
+## ⚙️ Tech Stack
+### Frontend
+🌟 Angular: Framework for building interactive user interfaces.
+🎨 CSS: Responsive and visually appealing design.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### API
+🌐 PokéAPI: External API providing comprehensive Pokémon data.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Tools
+🛠️ Angular CLI: For scaffolding and development.
+🌐 Bootstrap: For responsive styling.
+📦 npm: Package management.
